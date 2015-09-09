@@ -111,6 +111,7 @@
 		5280D3661B9FD84900A8037A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				52E211211BA0221200BCF66C /* image */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -176,6 +177,29 @@
 				528D5FB01B9F30870081438B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52E211211BA0221200BCF66C /* image */ = {
+			isa = PBXGroup;
+			children = (
+				52E211231BA0223200BCF66C /* navigation */,
+				52E211221BA0222800BCF66C /* logo */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		52E211221BA0222800BCF66C /* logo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = logo;
+			sourceTree = "<group>";
+		};
+		52E211231BA0223200BCF66C /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
