@@ -16,7 +16,54 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+   
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    tabBarViewController =[[UITabBarController alloc] init];
+    [self.window setRootViewController:tabBarViewController];
+    
+    HomeViewController* home = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+    GiftViewController* gift = [[GiftViewController alloc] initWithNibName:@"GiftViewController" bundle:nil];
+    TaskViewController* task = [[TaskViewController alloc] initWithNibName:@"TaskViewController" bundle:nil];
+    MineViewController* mine = [[MineViewController alloc] initWithNibName:@"MineViewController" bundle:nil];
+    
+    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:home];
+    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:gift];
+    UINavigationController *nav3 = [[UINavigationController alloc] initWithRootViewController:task];
+    UINavigationController *nav4 = [[UINavigationController alloc] initWithRootViewController:mine];
+ 
+    tabBarViewController.viewControllers = [NSArray arrayWithObjects:nav1,nav2,nav3,nav4, nil];
+    
+    UITabBar*tabBar = tabBarViewController.tabBar;
+    UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:0];
+    UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:1];
+    UITabBarItem *tabBarItem3 = [tabBar.items objectAtIndex:2];
+    UITabBarItem *tabBarItem4 = [tabBar.items objectAtIndex:3];
+    
+    tabBarItem1.title = @"首页";
+    tabBarItem2.title = @"有钱拿";
+    tabBarItem3.title = @"免费抢";
+    tabBarItem4.title = @"我的";
+    
+    [tabBarItem1 setFinishedSelectedImage:[UIImage imageNamed:@""] withFinishedUnselectedImage:[UIImage imageNamed:@""]];
+    [tabBarItem2 setFinishedSelectedImage:[UIImage imageNamed:@""] withFinishedUnselectedImage:[UIImage imageNamed:@""]];
+    [tabBarItem3 setFinishedSelectedImage:[UIImage imageNamed:@""] withFinishedUnselectedImage:[UIImage imageNamed:@""]];
+    [tabBarItem4 setFinishedSelectedImage:[UIImage imageNamed:@""] withFinishedUnselectedImage:[UIImage imageNamed:@""]];
+    
+    UIImage* tabBarBackground = [UIImage imageNamed:@""];
+    [[UITabBar appearance] setBackgroundImage:tabBarBackground];
+    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@""]];
+    
+    //    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+    //                                                       [UIColor whiteColor], UITextAttributeTextColor,nil] forState:UIControlStateNormal];
+    //    UIColor *titleHighlightedColor = UIColorFrom0xRGBWithAlpha(0x18222d, 1.0);
+    //    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+    //                                                       titleHighlightedColor, UITextAttributeTextColor,nil] forState:UIControlStateHighlighted];
+    self.window.rootViewController = tabBarViewController;
+    [self.window addSubview:navigationController.view];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

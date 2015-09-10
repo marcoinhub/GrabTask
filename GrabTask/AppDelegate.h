@@ -7,8 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HomeViewController.h"
+#import "GiftViewController.h"
+#import "TaskViewController.h"
+#import "MineViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+    
+    UINavigationController *navigationController;
+
+    UITabBarController *tabBarViewController;
+
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
