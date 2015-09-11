@@ -135,6 +135,12 @@
 		5280D3601B9FD81300A8037A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EACDF5931BA140AE00BB148C /* TaskTableViewCell.h */,
+				EACDF5941BA140AE00BB148C /* TaskTableViewCell.m */,
+				EACDF5951BA140AE00BB148C /* TaskTableViewCell.xib */,
+				EACDF59D1BA1661700BB148C /* MineTableViewCell.h */,
+				EACDF59E1BA1661700BB148C /* MineTableViewCell.m */,
+				EACDF59F1BA1661700BB148C /* MineTableViewCell.xib */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -149,6 +155,10 @@
 		5280D3621B9FD81E00A8037A /* General */ = {
 			isa = PBXGroup;
 			children = (
+				EACDF5821BA13D7C00BB148C /* Mine */,
+				EACDF5811BA13D6E00BB148C /* Task */,
+				EACDF5801BA13D6200BB148C /* Gift */,
+				EACDF57A1BA1390400BB148C /* Home */,
 			);
 			name = General;
 			sourceTree = "<group>";
@@ -203,8 +213,6 @@
 		528D5F911B9F30870081438B /* GrabTask */ = {
 			isa = PBXGroup;
 			children = (
-				EAE317131BA2D27A003E88D6 /* Classes */,
-				EACDF5921BA1407400BB148C /* Model */,
 				5280D3641B9FD83300A8037A /* Vendors */,
 				5280D3651B9FD84100A8037A /* Sections */,
 				5280D3661B9FD84900A8037A /* Resources */,
@@ -324,19 +332,6 @@
 			name = Mine;
 			sourceTree = "<group>";
 		};
-		EACDF5921BA1407400BB148C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				EACDF5931BA140AE00BB148C /* TaskTableViewCell.h */,
-				EACDF5941BA140AE00BB148C /* TaskTableViewCell.m */,
-				EACDF5951BA140AE00BB148C /* TaskTableViewCell.xib */,
-				EACDF59D1BA1661700BB148C /* MineTableViewCell.h */,
-				EACDF59E1BA1661700BB148C /* MineTableViewCell.m */,
-				EACDF59F1BA1661700BB148C /* MineTableViewCell.xib */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
 		EACDF5981BA15B4600BB148C /* center */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,17 +350,6 @@
 				EACDF59B1BA15C1200BB148C /* cp4.png */,
 			);
 			name = center;
-			sourceTree = "<group>";
-		};
-		EAE317131BA2D27A003E88D6 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				EACDF5821BA13D7C00BB148C /* Mine */,
-				EACDF5811BA13D6E00BB148C /* Task */,
-				EACDF5801BA13D6200BB148C /* Gift */,
-				EACDF57A1BA1390400BB148C /* Home */,
-			);
-			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
