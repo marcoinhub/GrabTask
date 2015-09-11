@@ -58,19 +58,55 @@
 }
 
 -(UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *identifier=@"MineTableViewCell";
-    MineTableViewCell *cell=(MineTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:identifier];
-    if(cell==nil){
-        
-        NSArray *views=[[NSBundle mainBundle]loadNibNamed:identifier owner:nil options:nil];
-        cell=[views objectAtIndex:0];
-        
+    switch (indexPath.section) {
+        case 0:
+            switch (indexPath.row) {
+                case 0:
+                    return _taskCell;
+                case 1:
+                    return _walletCell;
+                case 2:
+                    return _addressCell;
+                    
+            }
+            
+        case 1:
+            switch (indexPath.row) {
+                case 0:
+                    return _aboutCell;
+                case 1:
+                    return _helpCell;
+                case 2:
+                    return _ideaCell;
+                case 3:
+                    return _serviceCell;
+                    
+            }
+            
+        case 2:
+            switch (indexPath.row){
+            case 0:
+                return _friendCell;
+            case 1:
+                    return _rankCell;
+
+            }
+        case 3:
+            switch (indexPath.row) {
+                case 0:
+                    return _memberCell;
+                    break;
+                case 1:
+                    return _settingkCell;
+
+            }
+            
+            default:
+            return nil;
+   
+    
     }
     
-    cell.imageView.image =[UIImage imageNamed:@"i-youhuiquan.png"];
-    cell.titleLabel.text = @"我的优惠券";
-    
-    return cell;
     
     
 }
