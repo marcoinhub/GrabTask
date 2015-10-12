@@ -11,6 +11,7 @@
 @implementation TaskTableViewCell
 
 - (void)awakeFromNib {
+    int i=0;
     // Initialization code
 }
 
