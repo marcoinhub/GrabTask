@@ -24,4 +24,5 @@
 @property (strong, nonatomic) IBOutlet MineTableViewCell *rankCell;
 @property (strong, nonatomic) IBOutlet MineTableViewCell *memberCell;
 @property (strong, nonatomic) IBOutlet MineTableViewCell *settingkCell;
+@property (strong, nonatomic) IBOutlet UIImageView *topView;
 @end

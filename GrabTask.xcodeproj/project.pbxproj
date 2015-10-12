@@ -12,6 +12,8 @@
 		528D5FA31B9F30870081438B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528D5FA21B9F30870081438B /* Images.xcassets */; };
 		528D5FA61B9F30870081438B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528D5FA41B9F30870081438B /* LaunchScreen.xib */; };
 		528D5FB21B9F30870081438B /* GrabTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 528D5FB11B9F30870081438B /* GrabTaskTests.m */; };
+		EA92DA831BC728B2000346E2 /* usersbanner.png in Resources */ = {isa = PBXBuildFile; fileRef = EA92DA821BC728B2000346E2 /* usersbanner.png */; };
+		EA92DA851BC729E5000346E2 /* defaultPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = EA92DA841BC729E5000346E2 /* defaultPhoto.png */; };
 		EAB3E9621BA2C49200BABCB8 /* home@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB3E95E1BA2C49200BABCB8 /* home@3x.png */; };
 		EAB3E9641BA2C49200BABCB8 /* gift@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB3E9601BA2C49200BABCB8 /* gift@3x.png */; };
 		EAB3E9651BA2C49200BABCB8 /* member@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAB3E9611BA2C49200BABCB8 /* member@3x.png */; };
@@ -66,6 +68,8 @@
 		528D5FAB1B9F30870081438B /* GrabTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrabTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		528D5FB01B9F30870081438B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		528D5FB11B9F30870081438B /* GrabTaskTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrabTaskTests.m; sourceTree = "<group>"; };
+		EA92DA821BC728B2000346E2 /* usersbanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usersbanner.png; sourceTree = "<group>"; };
+		EA92DA841BC729E5000346E2 /* defaultPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultPhoto.png; sourceTree = "<group>"; };
 		EAB3E95E1BA2C49200BABCB8 /* home@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@3x.png"; sourceTree = "<group>"; };
 		EAB3E9601BA2C49200BABCB8 /* gift@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gift@3x.png"; sourceTree = "<group>"; };
 		EAB3E9611BA2C49200BABCB8 /* member@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "member@3x.png"; sourceTree = "<group>"; };
@@ -257,8 +261,8 @@
 		52E211211BA0221200BCF66C /* image */ = {
 			isa = PBXGroup;
 			children = (
-				EACDF5981BA15B4600BB148C /* center */,
 				EACDF56A1BA0256A00BB148C /* tabbar */,
+				EACDF5981BA15B4600BB148C /* center */,
 				52E211231BA0223200BCF66C /* navigation */,
 				52E211221BA0222800BCF66C /* logo */,
 			);
@@ -335,6 +339,8 @@
 		EACDF5981BA15B4600BB148C /* center */ = {
 			isa = PBXGroup;
 			children = (
+				EA92DA841BC729E5000346E2 /* defaultPhoto.png */,
+				EA92DA821BC728B2000346E2 /* usersbanner.png */,
 				EACDF5C51BA177A300BB148C /* i-youhuiquan@3x.png */,
 				EACDF5C01BA177A300BB148C /* i-qianbao@3x.png */,
 				EACDF5BA1BA177A300BB148C /* i-dizhi@3x.png */,
@@ -454,10 +460,12 @@
 				528D5FA61B9F30870081438B /* LaunchScreen.xib in Resources */,
 				EACDF5C61BA177A300BB148C /* i-dizhi@3x.png in Resources */,
 				EACDF5CC1BA177A300BB148C /* i-qianbao@3x.png in Resources */,
+				EA92DA831BC728B2000346E2 /* usersbanner.png in Resources */,
 				528D5FA31B9F30870081438B /* Images.xcassets in Resources */,
 				EACDF5971BA140AE00BB148C /* TaskTableViewCell.xib in Resources */,
 				EACDF57F1BA1392600BB148C /* HomeViewController.xib in Resources */,
 				EACDF5CF1BA177A300BB148C /* i-women@3x.png in Resources */,
+				EA92DA851BC729E5000346E2 /* defaultPhoto.png in Resources */,
 				EACDF5911BA13DDB00BB148C /* MineViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

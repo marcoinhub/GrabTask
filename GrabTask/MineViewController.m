@@ -15,8 +15,10 @@
 @implementation MineViewController
 
 - (void)viewDidLoad {
+    UILabel * label=nil;
+    [self.tableView setTableHeaderView:_topView];
     
-    NSMutableArray * icon = [[NSMutableArray alloc] initWithObjects:@"i-youhuiquan.png",@"i-qianbao.png",@"i-dizhi.png",@"i-women.png",@"i-heip.png"@"i-yijian.png",@"i-kefu.png",@"i-lianmeng.png",@"i-painming.png",@"i-shanghu.png",@"i-shezhi.png", nil];
+//    NSMutableArray * icon = [[NSMutableArray alloc] initWithObjects:@"i-youhuiquan.png",@"i-qianbao.png",@"i-dizhi.png",@"i-women.png",@"i-heip.png"@"i-yijian.png",@"i-kefu.png",@"i-lianmeng.png",@"i-painming.png",@"i-shanghu.png",@"i-shezhi.png", nil];
 
     [super viewDidLoad];
     
