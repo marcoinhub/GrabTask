@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>萌宝庆店100元代金券</string>
+		<key>shop</key>
+		<string>商家：萌宝</string>
+		<key>jointime</key>
+		<string>参与时间：2015-07-27</string>
+		<key>discountCDK</key>
+		<string>恭喜您获得 萌宝店庆100元代金券 ：lx12547</string>
+		<key>icon</key>
+		<string>cp3.jpg</string>
+		<key>check</key>
+		<string>查看</string>
+		<key>line</key>
+		<string>greenline</string>
+	</dict>
+</array>
+</plist>
